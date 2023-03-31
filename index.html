@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>studio-page</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,79 +21,59 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./cssa/stylesa.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <section class="page-header">
-        <div class="container">
+      <div class="container header-list">
+        <a class="header-logo" href="./index.html"
+          >Web<span class="header-studio">Studio</span></a
+        >
+        <button type="button" class="menu-btn is-open" aria-expanded="false">
+          <svg width="29" height="18" aria-label="mobile menu">
+            <use
+              class="icon-menu js-open-menu"
+              href="./images/sprite.svg#icon-menu-open"
+            ></use>
+            <use
+              class="icon-close js-close-menu"
+              href="./images/sprite.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+        <!-- <div class="menu-container">
           <nav>
-            <a class="header-logo" href="./index.html"
-              >Web<span class="header-studio">Studio</span></a
-            >
+            <ul class="header-nav">
+              <li>
+                <a class="nav-link studio" href="./index.html">Studio</a>
+              </li>
 
-            <button class="menu-btn is-open" type="button">
-              <svg width="32" height="22">
-                <use class="icon-burger" href="./images/sprite.svg#menu"></use>
-                <use
-                  class="icon-cross"
-                  href="./images/sprite.svg#icon-close-black"
-                ></use>
-              </svg>
-            </button>
-            <div class="menu-container">
-              <div class="navigation">
-                <ul class="header-nav">
-                  <li>
-                    <a class="nav-link studio" href="./index.html">Studio</a>
-                  </li>
+              <li>
+                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+              </li>
 
-                  <li>
-                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                  </li>
-
-                  <li>
-                    <a class="nav-link" href="">Contacts</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="contacts">
-                <ul class="adress-nav">
-                  <li>
-                    <a class="adress-link" href="tel:+110001111111"
-                      >+11 (000) 111-11-11</a
-                    >
-                  </li>
-                  <li>
-                    <a class="adress-mail" href="mailto:info@devstudio.com"
-                      >info@devstudio.com</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="socials">
-                <a class="socials-link" href="https://www.instagram.com/">
-                  <svg width="16" height="16">
-                    <use href="./images/sprite.svg#icon-instagram"></use>
-                  </svg> </a
-                ><a class="socials-link" href="">
-                  <svg width="16" height="16">
-                    <use href="./images/sprite.svg#icon-twitter"></use>
-                  </svg> </a
-                ><a class="socials-link" href="">
-                  <svg width="16" height="16">
-                    <use href="./images/sprite.svg#icon-facebook"></use>
-                  </svg> </a
-                ><a class="socials-link" href="">
-                  <svg width="16" height="16">
-                    <use href="./images/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
+              <li>
+                <a class="nav-link" href="">Contacts</a>
+              </li>
+            </ul>
           </nav>
-        </div>
-      </section>
+          <address class="header-adress">
+            <ul class="adress-nav">
+              <li>
+                <a class="adress-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+
+              <li>
+                <a class="adress-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div> -->
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -450,18 +428,20 @@
                 required
                 placeholder="E-mail"
               />
-              <button class="submit-button" type="button">
-                Subscribe
-                <svg class="submit-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-flyer"></use>
-                </svg>
-              </button>
+              <div class="submit-footer">
+                <button class="submit-button" type="button">
+                  Subscribe
+                  <svg class="submit-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-flyer"></use>
+                  </svg>
+                </button>
+              </div>
             </form>
           </div>
         </div>
       </section>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="btn-close">
           <button data-modal-close class="close" type="button">
@@ -533,8 +513,14 @@
           </div>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
-  <script src="./js/mobile-menu.js"></script>
-  <script src="js/modal.js"></script>
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="./js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
 </html>

@@ -60,11 +60,13 @@
 <symbol id="icon-flyer" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 2.667l-32 15 10.227 3.156 15.773-12.323-11.997 13.488 0.009 0.004-0.012-0.004v7.345l5.735-5.576 7.267 2.243 4.999-23.333z"></path>
 </symbol>
-<symbol id="icon-close-black" viewBox="0 0 32 32">
-<path d="M32 3.224l-3.224-3.224-12.776 12.776-12.776-12.776-3.224 3.224 12.776 12.776-12.776 12.776 3.224 3.224 12.776-12.776 12.776 12.776 3.224-3.224-12.776-12.776 12.776-12.776z"></path>
+<symbol id="icon-menu-open" viewBox="0 0 44 32">
+<path d="M0 6h28v6h-28v-6zM0 14h28v6h-28v-6zM0 22h28v6h-28v-6z"></path>
+<path d="M31 14l6 6 6-6z"></path>
 </symbol>
-<symbol id="menu" viewBox="0 0 20 20">
-<path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
+<symbol id="icon-menu-close" viewBox="0 0 44 32">
+<path d="M0 6h28v6h-28v-6zM0 14h28v6h-28v-6zM0 22h28v6h-28v-6z"></path>
+<path d="M31 20l6-6 6 6z"></path>
 </symbol>
 </defs>
 </svg>
