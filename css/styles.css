@@ -1104,6 +1104,16 @@ header {
     margin-bottom: 0;
   }
 
+  .adress-nav li {
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .adress-nav li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
   .banner-title {
     margin-bottom: 36px;
   }
