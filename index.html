@@ -175,6 +175,11 @@
             <li>
               <img
                 src="./images/rectangle71.jpg"
+                srcset="
+                  ./images/desctop/rectangle@1.jpg 1x,
+                  ./images/desctop/rectangle@2.jpg 2x
+                "
+                loading="lazy"
                 alt="availability"
                 width="360"
               />
@@ -183,6 +188,11 @@
             <li>
               <img
                 src="./images/rectangle72.jpg"
+                srcset="
+                  ./images/desctop/outsors@1.jpg 1x,
+                  ./images/desctop/outsors@2.jpg 2x
+                "
+                loading="lazy"
                 alt="multitasking"
                 width="360"
               />
@@ -191,6 +201,11 @@
             <li>
               <img
                 src="./images/rectangle73.jpg"
+                srcset="
+                  ./images/desctop/mars@1.jpg 1x,
+                  ./images/desctop/mars@2.jpg 2x
+                "
+                loading="lazy"
                 alt="multitasking"
                 width="360"
               />
@@ -205,12 +220,37 @@
           <ul class="team-list">
             <li>
               <div class="shadow">
-                <img
-                  class="team-image"
-                  src="./images/teamcard1.jpg"
-                  alt="Mark Guerrero"
-                  width="264"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desctop/guerrero@1.jpg 1x,
+                      ./images/desctop/guerrero@2.jpg 2x
+                    "
+                    media="(mai-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/guerrero@1.jpg 1x,
+                      ./images/tablet/guerrero@2.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/guerrero@1.jpg 1x,
+                      ./images/mobile/guerrero@2.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="team-image"
+                    src="./images/teamcard1.jpg"
+                    loading="lazy"
+                    alt="Mark Guerrero"
+                    width="264"
+                  />
+                </picture>
+
                 <div class="subtitle-list">
                   <h3 class="team-subtitle">Mark Guerrero</h3>
                   <p class="team-desc">Product Designer</p>
@@ -238,12 +278,33 @@
             </li>
             <li>
               <div class="shadow">
-                <img
-                  class="team-image"
-                  src="./images/teamcard2.jpg"
-                  alt="Tom Ford"
-                  width="264"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desctop/ford@1.jpg 1x,
+                      ./images/desctop/ford@2.jpg 2x
+                    "
+                    media="(min-width:1200px)" />
+                  <source
+                    srcset="
+                      ./images/tablet/ford@1.jpg 1x,
+                      ./images/tablet/ford@2.jpg 2x
+                    "
+                    media="(min-width: 768px)" />
+                  <source
+                    srcset="
+                      ./images/mobile/ford@1.jpg 1x,
+                      ./images/mobile/ford@2.jpg 2x
+                    "
+                    media="(max-width:767px)" />
+                  <img
+                    class="team-image"
+                    src="./images/teamcard2.jpg"
+                    loading="lazy"
+                    alt="Tom Ford"
+                    width="264"
+                /></picture>
+
                 <div class="subtitle-list">
                   <h3 class="team-subtitle">Tom Ford</h3>
                   <p class="team-desc">Frontend Developer</p>
@@ -271,12 +332,32 @@
             </li>
             <li>
               <div class="shadow">
-                <img
-                  class="team-image"
-                  src="./images/teamcard3.jpg"
-                  alt="Camila Garcia"
-                  width="264"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desctop/garcia@1.jpg 1x,
+                      ./images/desctop/garcia@2.jpg 2x
+                    "
+                    media="(min-width:1200px)" />
+                  <source
+                    srcset="
+                      ./images/tablet/garcia@1.jpg 1x,
+                      ./images/tablet/garcia@2.jpg 2x
+                    "
+                    media="(min-width:768px)" />
+                  <source
+                    srcset="
+                      ./images/mobile/garcia@1.jpg 1x,
+                      ./images/mobile/garcia@2.jpg 2x
+                    "
+                    media="(max-width:767px)" />
+                  <img
+                    class="team-image"
+                    src="./images/teamcard3.jpg"
+                    loading="lazy"
+                    alt="Camila Garcia"
+                    width="264"
+                /></picture>
                 <div class="subtitle-list">
                   <h3 class="team-subtitle">Camila Garcia</h3>
                   <p class="team-desc">Marketing</p>
@@ -304,12 +385,36 @@
             </li>
             <li>
               <div class="shadow">
-                <img
-                  class="team-image"
-                  src="./images/teamcard4.jpg"
-                  alt="Daniel Wilson"
-                  width="264"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desctop/wilson@1.jpg 1x,
+                      ./images/desctop/wilson@2.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/wilson@1.jpg 1x,
+                      ./images/tablet/wilson@2.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/wilson@1.jpg 1x,
+                      ./images/mobile/wilson@2.jpg 2x
+                    "
+                    media="max-width:767px"
+                  />
+                  <img
+                    class="team-image"
+                    src="./images/teamcard4.jpg"
+                    loading="lazy"
+                    alt="Daniel Wilson"
+                    width="264"
+                  />
+                </picture>
                 <div class="subtitle-list">
                   <h3 class="team-subtitle">Daniel Wilson</h3>
                   <p class="team-desc">UI Designer</p>
